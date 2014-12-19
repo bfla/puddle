@@ -26,7 +26,16 @@ var RiverSpeech = {
       },
       function(cb) {
         say.speak('Victoria', 'Victoria says, howdy partner', cb);
-      }
+      },
+      function(cb) {
+        say.speak('Zarvox', 'Zarvox says, howdy partner', cb);
+      },
+      function(cb) {
+        say.speak('Good News', 'Good news says, howdy partner', cb);
+      },
+      function(cb) {
+        say.speak('Whisper', 'Whisper says, howdy partner', cb);
+      },
     ], null);
   }
 }

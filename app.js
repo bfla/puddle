@@ -1,11 +1,8 @@
 var express = require('express');
-var async = require('async');
-var _ = require('underscore');
 var logger = require('morgan');
 
 var app = express();
-
-var RiverSpeech = require('./river_speech')
+var River = require('./river-client/river')
 
 app.use(logger('dev'));
 
@@ -33,6 +30,6 @@ app.use(function(err, req, res, next) {
     });
 });
 
-RiverSpeech.test();
+River.start();
 
 module.exports = app;
