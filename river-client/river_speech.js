@@ -10,7 +10,7 @@ var RiverSpeech = {
   test: function () {
     async.waterfall([
       function(cb) {
-        say.speak('slt_artic_hts', 'Hello.  My name is River.', cb);
+        say.speak('cmu_us_slt_artic', 'Hello.  My name is River.', cb);
       }
       // function(cb) {
       //   say.speak('Agnes', 'Agnes says... whats up, dog?', cb);
